@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hapisten Kaçış</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <header class="hud-panel">
+      <h1>HAPİSTEN KAÇIŞ</h1>
+      <p class="mission" id="missionText">Görev: Q ile fayansları kontrol et</p>
+      <p class="controls">A / D veya ← / →: Hareket | Space: Zıpla | Q: Etkileşim/Antrenman | E: Eşya al | W: Kaz | R: Dövüş</p>
+      <p class="status" id="statusText">Önce fayansı kır, kaşığı al, sonra tünel planını ilerlet.</p>
+    </header>
+
+    <main class="canvas-wrap background">
+      <canvas id="gameCanvas" class="game" width="1024" height="576" aria-label="Hapisten kaçış oyunu"></canvas>
+      <div class="intro-overlay overlay" id="introOverlay">
+        <article class="intro-card">
+          <h2>KAÇIŞ PLANI BAŞLIYOR</h2>
+          <p>Zengin bir adam, işlemediği bir suç yüzünden hapse atıldı. Şimdi hücrede güçlenip ekipman toplayacak ve tünel kazarak kaçacak.</p>
+          <p class="intro-tip">Hazırsan <strong>Enter</strong> ile başla.</p>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
